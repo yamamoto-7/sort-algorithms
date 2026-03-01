@@ -29,7 +29,7 @@ func merge(left, right []int) []int {
 
 	// 左右の要素を順番に比較し、小さいほうをresultに追加する
 	for i < len(left) && j < len(right) {
-		if left[i] < right[j] {
+		if left[i] <= right[j] {
 			result = append(result, left[i])
 			i++
 		} else {
